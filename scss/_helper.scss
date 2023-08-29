@@ -1,0 +1,146 @@
+// helper
+
+body{
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  color: $dark;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+ h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+ }
+
+ p{
+  font-size: 17px;
+ }
+
+ .bg-custom-dark{
+  background-color: #070127;
+ }
+
+ .section{
+  padding: 100px 0px;
+  position: relative;
+ }
+
+ .row>* {
+  position: relative
+}
+
+// avatar
+
+.avatar-xxs {
+  height: 1.5rem;
+  width: 1.5rem
+}
+
+.avatar-xs {
+  height: 2rem;
+  width: 2rem
+}
+
+.avatar-sm {
+  height: 3rem;
+  width: 3rem
+}
+
+.avatar-md {
+  height: 4.5rem;
+  width: 4.5rem
+}
+
+.avatar-lg {
+  height: 6rem;
+  width: 6rem
+}
+
+
+//  font size
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-15{
+  font-size: 15px;
+}
+
+.fs-16{
+  font-size: 16px;
+}
+
+.fs-17{
+  font-size: 17px;
+}
+
+.fs-18{
+  font-size: 18px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.fs-22{
+  font-size: 22px;
+}
+// btn
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      --#{$prefix}btn-color: #fff;
+      --#{$prefix}btn-bg: #{$value};;
+      --#{$prefix}btn-border-color: #{$value};
+      --#{$prefix}btn-hover-color: #fff;
+      --#{$prefix}btn-hover-bg: #{shade-color($value, $btn-hover-bg-shade-amount)};
+      --#{$prefix}btn-hover-border-color: #{shade-color($value, $btn-hover-border-shade-amount)};
+      --#{$prefix}btn-focus-shadow-rgb: #{hexToRGB($value)};;
+      --#{$prefix}btn-active-color: #fff;
+      --#{$prefix}btn-active-bg: #{shade-color($value, $btn-active-bg-shade-amount)};
+      --#{$prefix}btn-active-border-color: #{shade-color($value, $btn-active-border-shade-amount)};
+      --#{$prefix}btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --#{$prefix}btn-disabled-color: #fff;
+      --#{$prefix}btn-disabled-bg: #{shade-color($value, 25%)};
+      --#{$prefix}btn-disabled-border-color: #{shade-color($value, 28%)};
+    }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    --#{$prefix}btn-color: #{$value};
+    --#{$prefix}btn-border-color: #{$value};
+    --#{$prefix}btn-hover-color: #fff;
+    --#{$prefix}btn-hover-bg: #{$value};
+    --#{$prefix}btn-hover-border-color: #{$value};
+  }
+}
+// btn
+
+.btn{
+    padding: 10px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-sm{
+  padding: 7px 14px;
+  font-size: 14px;
+}
+
+.btn-link{
+  color: $gray-600;
+  &:hover{
+    color: $primary;
+  }
+}
+
+// @media (min-width: 1200px){
+//   .container {
+//     max-width: 1140px !important;
+// }
+// }
