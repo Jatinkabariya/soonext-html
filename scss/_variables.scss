@@ -8,9 +8,9 @@ $gray-100: #f2f5fe;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #e0e4e9;
-$gray-500: #adb5bd;
+$gray-500: #62798D;
 $gray-600: #6c757d;
-$gray-700: #495057;
+$gray-700: #475A6B;
 $gray-800: #3f3026;
 $gray-900: #353739;
 $black:    #000;
@@ -38,7 +38,7 @@ $indigo:  #6610f2;
 $purple:  #1f61c3;
 $pink:    #d63384;
 $red:     #dc3545;
-$orange:  #fd7e14;
+$orange:  #f65600;
 $yellow:  #ffc107;
 $green:   #198754;
 $teal:    #20c997;
@@ -71,6 +71,7 @@ $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
+$orange:        $orange;
 $light:         $gray-100;
 $dark:          $gray-900;
 // scss-docs-end theme-color-variables
@@ -83,6 +84,7 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
+  "orange":     $orange,
   "light":      $light,
   "dark":       $dark
 );
