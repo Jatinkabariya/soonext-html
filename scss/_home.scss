@@ -36,6 +36,7 @@
     border: 2px solid $white;
     background-color: transparent;
     border-radius: 30px;
+    font-weight: 500;
     &::placeholder{
       color: $white;
     }
@@ -102,6 +103,7 @@
     border: 2px solid $gray-800;
     background-color: transparent;
     border-radius: 4px;
+    font-weight: 500;
     &::placeholder{
       color: $gray-800;
     }
@@ -225,6 +227,7 @@
     border: 2px solid $gray-700;
     background-color: transparent;
     border-radius: 4px;
+    font-weight: 500;
     &::placeholder{
       color: $gray-700;
     }
@@ -241,7 +244,6 @@
   position: relative;
   left: 0;
   top: 0;
-
   .countdown-item{
     font-size: 16px;
     padding: 0px 14px;
@@ -251,26 +253,245 @@
     border-radius: 50%;
     text-align: center;
     border: 1px solid $gray-700;
+    color: $gray-700;
     background-color: rgba($gray-700, 0.20);
+    font-weight: 500;
     span {
       display: block;
       font-size: 30px;
       font-weight: 700;
-      line-height: 30px;
+      line-height: 32px;
       color: $gray-700;
       margin-top: 20px;
     }
     &:last-child{
       display: inline-block;
       text-transform: capitalize;
-      color: $dark;
       letter-spacing: 0px;
       width: fit-content;
       margin: 0 auto;
       margin-top: 20px;
+      width: 100px;
+      height: 100px;
       span{
         background-color: transparent;
         color: $gray-700;
+        font-size: 30px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.social-icon.social-icon-3{
+  a{
+    background: $gray-700;
+    color: $white;
+  }
+}
+
+@media (max-width: 425px) {
+  .countdown-list.countdown-list-3 {
+    .countdown-item{
+      width: 84px;
+      height: 84px;
+      span{
+        line-height: 25px;
+      }
+      &:last-child{
+        width: 84px;
+        height: 84px;
+        span{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .countdown-list.countdown-list-3 {
+    margin-top: 30px;
+    .countdown-item{
+      width: 108px;
+      height: 108px;
+      span{
+        line-height: 40px;
+      }
+      &:last-child{
+        width: 108px;
+        height: 108px;
+        span{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// home 4
+
+.overlay-page-4{
+  background-image: url(../images/home-img/bg-4.jpg);
+  background-position: bottom;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: repeat;
+}
+
+.countdown-list.countdown-list-4 {
+  position: relative;
+  left: 0;
+  top: 30px;
+  .countdown-item{
+    font-size: 16px;
+    padding: 0px 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    color: $danger;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    padding: 0 50px;
+    &:before{
+      position: absolute;
+      content: "";
+      right: -8px;
+      top: 70px;
+      width: 12px;
+      height: 12px;
+      font-size: 50px;
+      background-color: $danger;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      right: -8px;
+      bottom: 40px;
+      width: 12px;
+      height: 12px;
+      font-size: 50px;
+      background-color: $danger;
+    }
+    span {
+      display: block;
+      font-size: 120px;
+      font-weight: 700;
+      color: $danger;
+      line-height: initial;
+    }
+    &:last-child{
+      &:before{
+        display: none;
+      }
+      &:after{
+        display: none;
+      }
+      display: inline-block;
+      text-transform: capitalize;
+      letter-spacing: 0px;
+      margin: 0 auto;
+      span{
+        background-color: transparent;
+        color: $danger;
+        font-size: 120px;
+        padding: 0px 10px;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown-list.countdown-list-4 {
+    .countdown-item{
+      &:before{
+        top: 50px;
+      }
+      &:after{
+        bottom: 20px;
+      }
+      padding: 0 35px;
+      span{
+        font-size: 70px;
+      }
+      &:last-child{
+         span{
+          font-size: 70px;
+         }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .countdown-list.countdown-list-4 {
+   .countdown-item{
+    &:before{
+      display: none;
+    }
+    &:after{
+      display: none;
+    }
+   }
+  }
+}
+
+// home 5
+
+.overlay-page-5{
+  background-image: url(../images/home-img/bg-5.jpg);
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: repeat;
+}
+
+.countdown-list.countdown-list-5 {
+  position: inherit;
+  left: 0;
+  .countdown-item{
+    font-size: 16px;
+    padding: 0px 14px;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    text-align: center;
+    border: 2px solid $white;
+    color: rgba($white, 0.7);
+    background-color: transparent;
+    font-weight: 500;
+    span {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 32px;
+      color: $white;
+      margin-top: 20px;
+    }
+    &:last-child{
+      display: inline-block;
+      text-transform: capitalize;
+      letter-spacing: 0px;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      span{
+        background-color: transparent;
+        color: $white;
         font-size: 30px;
         padding: 0px 20px;
         margin: 0 auto;
