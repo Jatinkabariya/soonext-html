@@ -456,27 +456,26 @@
   height: 100vh;
   background-repeat: repeat;
 }
-
 .countdown-list.countdown-list-5 {
   position: inherit;
   left: 0;
   .countdown-item{
     font-size: 16px;
-    padding: 0px 14px;
-    font-weight: 700;
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: 120px;
     border-radius: 0px;
     text-align: center;
     border: 2px solid $white;
     color: rgba($white, 0.7);
     background-color: transparent;
     font-weight: 500;
+    margin: 0px 14px;
+    margin-top: 20px;
     span {
       display: block;
       font-size: 30px;
       font-weight: 700;
-      line-height: 32px;
+      line-height: 46px;
       color: $white;
       margin-top: 20px;
     }
@@ -485,10 +484,10 @@
       text-transform: capitalize;
       letter-spacing: 0px;
       width: fit-content;
-      margin: 0 auto;
+      margin: 0px 14px;
       margin-top: 20px;
-      width: 100px;
-      height: 100px;
+      width: 15%;
+      height: 120px;
       span{
         background-color: transparent;
         color: $white;
@@ -500,3 +499,143 @@
     }
   }
 }
+
+.social-icon.social-icon-5{
+  a{
+    background: $teal;
+    color: $white;
+  }
+}
+
+@media (max-width: 425px) {
+  .countdown-list.countdown-list-5 {
+    .countdown-item{
+      width: 125px;
+      height: 125px;
+      &:last-child{
+        width: 125px;
+        height: 125px;
+      }
+    }
+  }
+}
+
+// home 6
+
+.countdown-list.countdown-list-6 {
+  position: relative;
+  left: 0;
+  top: 0px;
+  .countdown-item{
+    font-size: 16px;
+    padding: 0px 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    color: $gray-600;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    padding: 0px 20px;
+    &:before{
+      position: absolute;
+      content: "";
+      right: -8px;
+      top: 30px;
+      width: 10px;
+      height: 10px;
+      font-size: 50px;
+      background-color: $success;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      right: -8px;
+      bottom: 56px;
+      width: 10px;
+      height: 10px;
+      font-size: 50px;
+      background-color: $success;
+    }
+    span {
+      display: block;
+      font-size: 80px;
+      font-weight: 600;
+      color: $success;
+      line-height: initial;
+    }
+    &:first-child{
+      padding-left: 0px;
+    }
+    &:last-child{
+      &:before{
+        display: none;
+      }
+      &:after{
+        display: none;
+      }
+      display: inline-block;
+      text-transform: capitalize;
+      letter-spacing: 0px;
+      margin: 0 auto;
+      span{
+        background-color: transparent;
+        color: $success;
+        font-size: 80px;
+        padding: 0px;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .countdown-list.countdown-list-6 {
+    .countdown-item{
+      &:before{
+        width: 7px;
+        height: 7px;
+      }
+      &:after{
+        width: 7px;
+        height: 7px;
+      }
+      span{
+        font-size: 40px;
+        }
+        &:last-child{
+          span{
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .countdown-list.countdown-list-6 {
+      .countdown-item{
+        padding: 0px 12px;
+        &:before{
+          width: 7px;
+          height: 7px;
+          top: 22px;
+        }
+        &:after{
+          width: 7px;
+          height: 7px;
+          bottom: 50px;
+        }
+        span{
+          font-size: 30px;
+          }
+          &:last-child{
+            span{
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
