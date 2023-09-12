@@ -908,7 +908,24 @@ p {
   line-height: initial;
 }
 
+@media (max-width: 1024px) {
+  .countdown-list.countdown-list-6 .countdown-item span {
+    font-size: 60px;
+  }
+  .countdown-list.countdown-list-6 .countdown-item:last-child span {
+    font-size: 60px;
+  }
+  .countdown-list.countdown-list-6 .countdown-item:before {
+    top: 20px;
+  }
+  .countdown-list.countdown-list-6 .countdown-item:after {
+    bottom: 45px;
+  }
+}
 @media (max-width: 425px) {
+  .countdown-list.countdown-list-6 .countdown-item {
+    padding: 0 15px;
+  }
   .countdown-list.countdown-list-6 .countdown-item:before {
     width: 7px;
     height: 7px;
