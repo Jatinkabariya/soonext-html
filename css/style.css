@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*
+	Theme Name: Tronss – Comingsoon Template
+	Author: Aaditech
+	Version: 1
+*/
+/*
+variable
+helper
+all demo page
+*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 :root {
   --bs-primary: #0747c3;
@@ -20,6 +31,7 @@
   --bs-dark-rgb: 53, 55, 57;
 }
 
+/*helper*/
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -349,6 +361,7 @@ p {
   color: #0747c3;
 }
 
+/* demo*/
 .overlay-page-1 {
   background-image: url(../images/home-img/bg-1.jpg);
   background-position: bottom;
@@ -431,6 +444,7 @@ p {
     transform: translateX(-50%) translateZ(0);
   }
 }
+/* demo-2*/
 .overlay-page-2 {
   background-image: url(../images/home-img/bg-2.jpg);
   background-position: bottom;
@@ -541,6 +555,7 @@ p {
     padding: 0 9px;
   }
 }
+/* demo 3*/
 .overlay-page-3 {
   background-image: url(../images/home-img/bg-3.jpg);
   background-position: bottom;
@@ -668,6 +683,7 @@ p {
     padding: 0;
   }
 }
+/* demo 4*/
 .overlay-page-4 {
   background-image: url(../images/home-img/bg-4.jpg);
   background-position: bottom;
@@ -769,6 +785,7 @@ p {
     display: none;
   }
 }
+/*demo 5*/
 .overlay-page-5 {
   background-image: url(../images/home-img/bg-5.jpg);
   background-position: center center;
@@ -839,6 +856,7 @@ p {
     height: 125px;
   }
 }
+/* demo 6*/
 .countdown-list.countdown-list-6 {
   position: relative;
   left: 0;
