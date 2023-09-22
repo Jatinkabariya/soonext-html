@@ -127,6 +127,17 @@
   }
 }
 
+@media (max-width: 425px) {
+  .subscribe-form.subscribe-form-2,
+  .subscribe-form.subscribe-form-3 {
+  button{
+    position: inherit;
+    width: 100%;
+    margin-top: 20px;
+  }
+  }
+}
+
 
 .social-icon.social-icon-2{
   a{
